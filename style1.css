@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -171,7 +171,7 @@ nav .search-box input[type="text"]:focus {
     display: flex;
     gap: 1.5rem;
     justify-content: center;
-    overflow-x: auto;
+    /* overflow-x: auto; */
 }
 
 .carousel-item {
@@ -200,11 +200,25 @@ nav .search-box input[type="text"]:focus {
 }
 
 
+.slider-item {
+    font-size: 1.2rem;
+    color: #cccccc;
+    margin: 0.5rem 0;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.slider-item::before {
+    content: '🍴'; /* Add the emoji */
+    position: absolute;
+    left: 0;
+    top: 0; /* Align with text */
+}
 
 /* Dining Highlights */
 .highlights {
     padding: 2rem;
-    background-color: #222;
+    background-color: #1a1a1a;
     text-align: center;
 }
 
@@ -220,7 +234,7 @@ nav .search-box input[type="text"]:focus {
 
 .highlights ul li {
     font-size: 1.2rem;
-    color: #ffffff;
+    color: #cccccc;
     margin: 1rem 0;
     position: relative;
     padding-left: 2rem;
@@ -311,3 +325,38 @@ footer {
         transform: translateY(0);
     }
 }
+
+.selection {
+    text-align: center;
+    padding: 2rem;
+}
+
+.order-options {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.order-options li {
+    display: inline-block;
+}
+
+.order-options .order-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #ff00cc;
+    color: #ffffff;
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.order-options .order-btn:hover {
+    background: #ffffff;
+    color: #ff00cc;
+    transform: scale(1.1);
+}
+

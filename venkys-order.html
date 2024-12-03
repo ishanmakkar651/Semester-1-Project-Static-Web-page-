@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Order - Venky's</title>
+    <style>
+        main {
+            margin-left: 20px;
+        }
+
+
+        nav ul li:first-child a {
+            background-color: #ff00cc;
+            color: #ffffff;
+            border-radius: 40px;
+            padding: 0.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: 0.3s ease;
+        }
+
+
+        nav ul li:first-child a:hover {
+            background-color: #ffffff;
+            color: #ff00cc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Venky's - Order Page</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form method="post" action="/submit-order.html">
+            <h2>Choose Your Items:</h2>
+            <label><input type="checkbox" name="item" value="Spicy Chicken Burger"> Spicy Chicken Burger - <span style="color: #ff00cc;">120 Rs </span></label><br>
+            <label><input type="checkbox" name="item" value="Premium Veg Burger"> Premium Veg Burger - <span style="color: #ff00cc;">110 Rs </span></label><br>
+            <label><input type="checkbox" name="item" value="Aloo Tikka Wrap"> Aloo Tikka Wrap - <span style="color: #ff00cc;">90 Rs </span></label><br>
+            <label><input type="checkbox" name="item" value="Chilly Garlic Potato Bites"> Chilly Garlic Potato Bites - <span style="color: #ff00cc;">60 Rs </span></label><br>
+            <label><input type="checkbox" name="item" value="Biryani"> Biryani - <span style="color: #ff00cc;">300 Rs </span></label><br>
+<button type="submit" class="order-btn">Add to Cart</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Chitkara University. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
